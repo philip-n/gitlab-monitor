@@ -89,7 +89,7 @@
       }
 
       &.success {
-        background-color: #2E7D32;
+        background-color: #48A43F;
       }
 
       &.running {
