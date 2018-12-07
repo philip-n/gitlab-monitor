@@ -45,6 +45,10 @@ Your configuration overrides the default configuration, which can be found
   // Limit projects by visibility
   // Can be: 'any', 'public', 'internal' or 'private'
   "projectVisibility": "any",
+
+  // Limit by projects that the current user is a member of
+  // Can be: true, false
+  "membership": false
   
   // Filter projects
   // The filter is applied to the path with namespace
@@ -93,3 +97,6 @@ Your configuration overrides the default configuration, which can be found
 ## Headless configuration
 If you can't access the browser directly for some reason, you can pass
 your configuration JSON encoded with base64url as `rawConfig` query parameter.
+
+## Injecting configuration when starting the container
+You can also inject your configuration at runtime by setting an environment variable, `GITLAB_MONITOR_CONFIG`.
